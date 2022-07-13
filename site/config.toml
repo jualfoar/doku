@@ -1,6 +1,6 @@
 baseURL = "https://docker-disk.space/"
 languageCode = "en-us"
-title = "Docker disk usage dashboard • Doku"
+title = "Doku - Docker disk usage dashboard"
 theme = "minimal"
 publishDir = "../docs"
 # disqusShortname = "username" # delete this to disable disqus comments
@@ -22,6 +22,7 @@ unsafe= true
     highlightStyle = "default"
     highlightLanguages = ["bash"]
     css = ["css/custom.css"]
+    favicon = "favicon.ico"
 
 [[menu.main]]
     url = "/"

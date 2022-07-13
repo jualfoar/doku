@@ -1,3 +1,6 @@
+---
+title: "Doku - Docker disk usage dashboard"
+---
 # about-anchor
 # About
 Doku is a simple, lightweight web-based application that allows you to monitor Docker disk usage in a user-friendly manner.
