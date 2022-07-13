@@ -1,0 +1,57 @@
+
+a:link, a:visited {
+  color: unset;
+}
+
+main {
+  max-width: unset;
+}
+
+.intro {
+  transform: unset;
+}
+
+@media screen and (max-width: 900px) {
+  .intro > h2 {
+    font-size: 5vmin;
+  }
+}
+
+.main-buttons {
+  margin-top: 5vmin;
+}
+
+.main-buttons a {
+  min-width: 230px;
+  margin-left: 20px;
+}
+
+.main-buttons a.btn-default:hover {
+  background-color: inherit;
+}
+
+.homepage-content {
+  margin: auto;
+  padding: 25px;
+  flex: 1 0 auto;
+  max-width: 800px;
+  font-size: 16px;
+}
+
+.homepage-content p {
+  margin-bottom: 15px;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
+}
+
+h1#about-anchor,
+h1#getting-doku-anchor,
+h1#using-doku-anchor,
+h1#licence-anchor {
+  visibility: hidden;
+}

@@ -1,0 +1,23 @@
+{{ partial "header" . }}
+
+<main>
+  <div class="intro">
+    {{ with .Site.Params.profilePic }} <img class="profile" src="{{ . }}"> {{ end }}
+    <h1>{{ .Site.Params.Name }}</h1>
+    <h2>{{ markdownify .Site.Params.Description }}</h2>
+    <div class="main-buttons">
+      <a class="btn btn-default btn-lg" href="https://github.com/amerkurev/doku/">
+        <i class="fab fa-github" aria-hidden="true"></i>&nbsp;&nbsp;View on GitHib
+      </a>
+      <a class="btn btn-default btn-lg" href="https://hub.docker.com/r/amerkurev/doku">
+        <i class="fab fa-docker" aria-hidden="true"></i>&nbsp;&nbsp;View on Docker Hub
+      </a>
+    </div>
+    <div>
+      <img src="https://github.com/amerkurev/static/raw/e15c6f02845477d94af300f559852313ff869bef/doku/laptop_doku.svg" alt="Laptop with Doku" style="max-width: 100%;">
+    </div>
+    <div class="homepage-content text-justify">{{ .Content | safeHTML }}</div>
+  </div>
+</main>
+
+{{ partial "footer" . }}

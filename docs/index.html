@@ -5,7 +5,7 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Docker disk usage dashboard • Doku</title>
+        <title></title>
         
         <style>
 
@@ -15,7 +15,7 @@
     }
 
     :root {
-        --accent: red;
+        --accent: Silver;
         --border-width:  5px ;
     }
 
@@ -25,13 +25,13 @@
 <link rel="stylesheet" href="https://docker-disk.space/css/main.css">
 
 
-
+ <link rel="stylesheet" href="https://docker-disk.space/css/custom.css"> 
 
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
 
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"> 
+
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
@@ -39,16 +39,6 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
  
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
-    
-    <script>hljs.initHighlightingOnLoad();</script>
 
 
 
@@ -74,7 +64,7 @@
             <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         
 
-        
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
 
     </head>
 
@@ -84,7 +74,7 @@
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand visible-xs" href="#">Docker disk usage dashboard • Doku</a>
+                    <a class="navbar-brand visible-xs" href="#"></a>
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -97,26 +87,20 @@
                             
                                 <li><a href="/">Home</a></li>
                             
-                                <li><a href="/about/">About</a></li>
+                                <li><a href="#about-anchor">About</a></li>
                             
-                                <li><a href="/post/">Posts</a></li>
+                                <li><a href="#getting-doku-anchor">Getting Doku</a></li>
                             
-                                <li><a href="/project/">Projects</a></li>
+                                <li><a href="#using-doku-anchor">Using Doku</a></li>
+                            
+                                <li><a href="#licence-anchor">License</a></li>
                             
                         </ul>
                     
                     
                         <ul class="nav navbar-nav navbar-right">
                             
-                                <li class="navbar-icon"><a href="mailto:me@example.com"><i class="fas fa-envelope"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://github.com/username/"><i class="fab fa-github"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://twitter.com/username/"><i class="fab fa-twitter"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/username/"><i class="fab fa-linkedin"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://www.stackoverflow.com/username/"><i class="fab fa-stack-overflow"></i></a></li>
+                                <li class="navbar-icon"><a href="https://github.com/amerkurev/doku/"><i class="fab fa-github"></i></a></li>
                             
                         </ul>
                     
@@ -126,12 +110,42 @@
 
 
 <main>
-    <div class="intro">
-        
-        <h1>Docker disk usage dashboard • Doku</h1>
-        <h2>Personal blog theme powered by Hugo</h2>
-        
+  <div class="intro">
+    
+    <h1>Doku</h1>
+    <h2>Docker disk usage dashboard</h2>
+    <div class="main-buttons">
+      <a class="btn btn-default btn-lg" href="https://github.com/amerkurev/doku/">
+        <i class="fab fa-github" aria-hidden="true"></i>&nbsp;&nbsp;View on GitHib
+      </a>
+      <a class="btn btn-default btn-lg" href="https://hub.docker.com/r/amerkurev/doku">
+        <i class="fab fa-docker" aria-hidden="true"></i>&nbsp;&nbsp;View on Docker Hub
+      </a>
     </div>
+    <div>
+      <img src="https://github.com/amerkurev/static/raw/e15c6f02845477d94af300f559852313ff869bef/doku/laptop_doku.svg" alt="Laptop with Doku" style="max-width: 100%;">
+    </div>
+    <div class="homepage-content text-justify"><h1 id="about-anchor">about-anchor</h1>
+<h1 id="about">About</h1>
+<p>Doku is a simple, lightweight web-based application that allows you to monitor Docker disk usage in a user-friendly manner.</p>
+<p>The Doku displays the amount of disk space used by the Docker daemon, splits by images, containers, volumes, and builder cache.</p>
+<h1 id="getting-doku-anchor">getting-doku-anchor</h1>
+<h1 id="getting-doku">Getting Doku</h1>
+<p>Doku is a very small Docker container (6 MB compressed). Pull the latest release from the index:</p>
+<pre><code>docker pull amerkurev/doku:latest
+</code></pre>
+<h1 id="using-doku-anchor">using-doku-anchor</h1>
+<h1 id="using-doku">Using Doku</h1>
+<p>The simplest way to use Doku is to run the Docker container. Mount the Docker Unix socket with <code>-v</code> to <code>/var/run/docker.sock</code>. Also, you need to mount the top-level directory (<code>/</code>) on the host machine in <code>ro</code> mode. Otherwise, Doku will not be able to calculate the size of the logs and bind mounts.</p>
+<pre><code>docker run --name doku -d -v /var/run/docker.sock:/var/run/docker.sock:ro -v /:/hostroot:ro -p 9090:9090 amerkurev/doku
+</code></pre>
+<br>
+<p>Doku will be available at <a href="http://localhost:9090/">http://localhost:9090/</a>.</p>
+<h1 id="licence-anchor">licence-anchor</h1>
+<h2 id="license">License</h2>
+<h4 id="mit">MIT</h4>
+</div>
+  </div>
 </main>
 
         <footer>
