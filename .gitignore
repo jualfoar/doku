@@ -23,6 +23,9 @@ coverage.txt
 # System
 .DS_Store
 
+# Hugo
+.hugo_build.lock
+
 # React App
 web/static
 web/doku/build
