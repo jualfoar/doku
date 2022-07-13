@@ -11,28 +11,23 @@ main {
   transform: unset;
 }
 
+.github-button {
+  margin-top: 5vmin;
+}
+
 @media screen and (max-width: 900px) {
   .intro > h2 {
     font-size: 5vmin;
   }
 }
 
-.main-buttons {
-  margin-top: 5vmin;
-}
-
-.main-buttons a {
-  min-width: 230px;
-  margin-left: 20px;
-}
-
-.main-buttons a.btn-default:hover {
+.github-button a.btn-default:hover {
   background-color: inherit;
 }
 
 .homepage-content {
   margin: auto;
-  padding: 25px;
+  padding: 20px;
   flex: 1 0 auto;
   max-width: 800px;
   font-size: 16px;
@@ -54,4 +49,8 @@ h1#getting-doku-anchor,
 h1#using-doku-anchor,
 h1#licence-anchor {
   visibility: hidden;
+}
+
+.navbar-brand.visible-xs {
+  display: none !important;
 }
