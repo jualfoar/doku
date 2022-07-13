@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docker disk usage dashboard • Doku</title>
+    <title>Doku - Docker disk usage dashboard</title>
     <link>https://docker-disk.space/</link>
-    <description>Recent content on Docker disk usage dashboard • Doku</description>
+    <description>Recent content on Doku - Docker disk usage dashboard</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://docker-disk.space/index.xml" rel="self" type="application/rss+xml" />
   </channel>
