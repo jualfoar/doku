@@ -54,6 +54,11 @@ unsafe= true
 # The list of available icons can be found at http://fontawesome.io/icons.
 
 [[menu.icon]]
+    url = "https://hub.docker.com/r/amerkurev/doku"
+    name = "fab fa-docker"
+    weight = 1
+
+[[menu.icon]]
     url = "https://github.com/amerkurev/doku/"
     name = "fab fa-github"
     weight = 2
