@@ -38,7 +38,7 @@ RUN rm -f /srv/frontend/.eslintrc.json && \
 CMD yarn run test
 
 
-FROM ghcr.io/umputun/baseimage/app:v1.11 as base
+FROM ghcr.io/umputun/baseimage/app:v1.11.0 as base
 
 FROM scratch
 
